@@ -566,7 +566,7 @@ public class np extends JFrame implements ActionListener, KeyListener
 
         class WinHandler extends WindowAdapter
         {
-              @Override
+              @Override 
         public void windowClosing(WindowEvent e)
         {
         exitFile();
@@ -636,8 +636,18 @@ public class np extends JFrame implements ActionListener, KeyListener
                 }
                 catch (Exception ex)
                 {
-                        System.out.println("U wanted looks na ... Now get this: ");
+                        try
+                        	{
+                        		UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
+                        	}
+                        catch (Exception es)
+                        	{
+                        		System.out.println("Unexpected! Sorry!");
+                        	}
+                        //System.out.println("U wanted looks na ... Now get this: ");
+                        System.out.println("OK, Now you re not on windows huh!, Get this :)");
                         System.out.println(ex);
+                        
                 }
 
         // Making it fullscreen
