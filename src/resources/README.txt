@@ -1,0 +1,1 @@
+The folder resources should be in the same path as that of the compiled jar file in order to run correctly.
